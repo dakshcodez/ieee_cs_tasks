@@ -62,6 +62,10 @@ class Stack{
         int getMax(){
             return max;
         }
+
+        int topElement(){
+            return vec[top];
+        }
 };
 
 int main(){
@@ -78,6 +82,7 @@ int main(){
     s.push(10);
     s.push(11);
     s.display();
+    cout<<s.topElement()<<endl;
     cout<<s.getMax()<<endl;
     cout<<s.getMin()<<endl;
     return 0;
